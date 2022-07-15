@@ -48,6 +48,7 @@ const GridRow = styled.div`
 
 function GlobalPage() {
   // get data for lists and totals
+  console.log('jhgjhg')
   const allPairs = useAllPairData()
   const allTokens = useAllTokenData()
   const transactions = useGlobalTransactions()

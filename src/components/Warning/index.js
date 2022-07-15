@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
 import 'feather-icons'
 import styled from 'styled-components'
@@ -72,7 +74,7 @@ export default function Warning({ type, show, setShow, address }) {
                 fontWeight={500}
                 lineHeight={'145.23%'}
                 color={'#E650C5'}
-                href={'https://rinkeby.etherscan.io/address/' + address}
+                href={'https://etherscan.io/address/' + address}
                 target="_blank"
               >
                 View {type === 'token' ? 'token' : 'pair'} contract on Etherscan
@@ -92,7 +94,7 @@ export default function Warning({ type, show, setShow, address }) {
                 fontWeight={500}
                 lineHeight={'145.23%'}
                 color={'#E650C5'}
-                href={'https://rinkeby.etherscan.io/address/' + address}
+                href={'https://etherscan.io/address/' + address}
                 target="_blank"
               >
                 View {type === 'token' ? 'token' : 'pair'} contract on Etherscan
